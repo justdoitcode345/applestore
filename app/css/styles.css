@@ -1,0 +1,824 @@
+@font-face {
+    font-family: 'elektra_light_proregular';
+    src: url('../fonts/elektra_light_pro-webfont.eot');
+    src: url('../fonts/elektra_light_pro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/elektra_light_pro-webfont.woff2') format('woff2'),
+         url('../fonts/elektra_light_pro-webfont.woff') format('woff'),
+         url('../fonts/elektra_light_pro-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'elektra_medium_proitalic';
+    src: url('../fonts/elektra_medium_pro_italic-webfont.eot');
+    src: url('../fonts/elektra_medium_pro_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/elektra_medium_pro_italic-webfont.woff2') format('woff2'),
+         url('../fonts/elektra_medium_pro_italic-webfont.woff') format('woff'),
+         url('../fonts/elektra_medium_pro_italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'elektra_medium_proregular';
+    src: url('../fonts/elektra_medium_pro-webfont.eot');
+    src: url('../fonts/elektra_medium_pro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/elektra_medium_pro-webfont.woff2') format('woff2'),
+         url('../fonts/elektra_medium_pro-webfont.woff') format('woff'),
+         url('../fonts/elektra_medium_pro-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'elektra_light_probold';
+    src: url('../fonts/font-webfont.eot');
+    src: url('../fonts/font-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/font-webfont.woff2') format('woff2'),
+         url('../fonts/font-webfont.woff') format('woff'),
+         url('../fonts/font-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*=======================================================> top layout*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0; 
+}
+html * {
+  box-sizing: border-box; 
+}
+html, body {
+  height: 100%; 
+}
+body {
+}
+
+.wrapper {
+    min-height: calc( 100vh - 228px );
+    min-width: 1000px;
+    padding-bottom: 15px;
+}
+
+/*=======================================================> top block*/
+.containerTop{
+    background-color: #45636e;
+}
+.top {
+    height: 41px;
+    max-width: 1000px; 
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.socialList {
+    width: 88px;
+    margin-top: 7px;
+}
+.socialList-item {
+    display: inline-block;
+}
+.socialList-item:nth-child(n+2){
+    margin-left: 3px;
+}
+.social-icon {
+    text-indent: -99999px;
+    display: block;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+    background-image: url(../img/sprite-icons.png);
+    background-position: -4px -59px;
+}
+.small-fb {
+    background-position: -37px -59px;
+}
+.small-tw {
+    background-position: -67px -59px;
+}
+.top-locationIcon {
+    text-indent: -9999px;
+    display: block;
+    float: left;
+    background-image: url(../img/sprite-icons.png);
+    background-position: -4px -29px;
+    height: 22px;
+    width: 16px;
+    margin-top: 7px;
+}
+.top-locationText {
+    font-family: 'elektra_light_proregular';
+    color: white;
+    font-size: 13px;
+    display: block;
+    margin-top: 12px;
+    margin-left: 8px;
+    float: left;
+}
+.top-phoneNumber {
+    text-decoration: none;
+    margin-top: 8px;
+}
+.top-phone-code {
+    font-family: 'elektra_medium_proregular';
+    color: #00b9fe;
+    position: relative;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 4px;
+    top:-0.6em;
+}
+.top-phone-number {
+    color: white;
+    font-size: 25px;
+    font-family: 'elektra_light_proregular';
+}
+.top-phoneNumber:nth-child(n+5){
+    color: red;
+}
+
+/*=======================================================> header block*/
+.containerHeader {
+    background-color: #edf2f7;
+}
+.header {
+    margin: 0 auto;
+    max-width: 1000px; width: 100%;
+    position: relative;
+    height: 138px;
+    margin-bottom: -40px;
+}
+.header-logo {
+    position: absolute;
+    top: 24px;
+}
+.header-logo-title {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+}
+.header-linksWrapper {
+    position: absolute;
+    right: 0;
+    display: block;
+    top: 27px;
+}
+.header-list {
+    display: inline-block;
+    vertical-align: bottom;
+}
+.header-search {
+    margin-right: 5px;
+}
+.header-search-field {
+    border: 1px solid #dce6f0;
+    border-right: none;
+    width: 258px;
+    height: 35px;
+    float: left;
+    padding-left: 10px;
+}
+.header-search-field:focus {
+    outline: none;
+}
+
+/* placeholder */
+.header-search-field::-webkit-input-placeholder {
+    color:#dce6f0;
+    font-family: 'elektra_light_proregular';
+    font-size: 15px; }
+.header-search-field::-moz-placeholder          {
+    color:#dce6f0;
+    font-family: 'elektra_light_proregular';
+    font-size: 15px; }/* Firefox 19+ */
+.header-search-field:-moz-placeholder           {
+    color:#dce6f0;
+    font-family: 'elektra_light_proregular';
+    font-size: 15px; }/* Firefox 18- */
+.header-search-field:-ms-input-placeholder      {
+    color:#dce6f0;
+    font-family: 'elektra_light_proregular';
+    font-size: 15px; }
+
+/* placeholder disappear */
+.header-search-field::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+.header-search-field::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+.header-search-field:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+.header-search-field:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+.header-search-field:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.header-search-field:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.header-search-field:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.header-search-field:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.header-search-button {
+    height: 35px;
+    width: 80px;
+    background-color: #00b9fe;
+    font-family: 'elektra_medium_proregular';
+    color: white;
+    float: left;
+}
+.header-search-button:focus {
+   outline: none;
+}
+.header-link {
+    font-family: 'elektra_light_proregular';
+    font-size: 13px;
+    color: #00b9fe;
+    text-decoration: underline;
+    margin: 12px 10px;
+    display: block;
+}
+.header-link:visited {
+    color: #00b9fe;
+}
+.header-link:hover {
+    color: #613993;
+}
+.header-list_both {
+    height: 38px;
+    margin: 0 15px;
+}
+.cart {
+    height: 42px;
+    width: 136px;
+    position: relative;
+}
+.cart:hover {
+    height: 42px;
+    width: 136px;
+    background-color: white;
+    border: 1px solid #dce6f0;
+    cursor: pointer;
+}
+.cart:hover .cart-link{
+    margin-top: 15px; 
+}
+.cart:hover .cart-icon{
+    margin-top: 12px;
+    margin-left: 9px;
+}
+.cart-icon {
+    background-position: -4px -4px;
+    width: 20px;
+    height: 17px;
+    background-image: url(../img/sprite-icons.png);
+    float: left;
+    margin-top: 13px;
+    margin-left: 10px;
+}
+.cart-link {
+    color: #5c7b98;
+    float: left;
+    margin-top: 16px;
+    margin-left: 20px;
+}
+.cart-list {
+    width: 245px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    border: 1px solid #dce6f0;
+    z-index: 5;
+    display: none;
+    cursor: default;
+}
+.cart:hover .cart-list {
+    display: block;
+}
+.cart-list-item {
+    min-height: 75px;
+    border-bottom: 1px solid #f1f5f9;
+    background-color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-list-item:nth-child(even) {
+    background-color: #f8fafb;
+}
+.cart-list-imageFlexWrapper {
+    width: 75px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-item-imgWrapper {
+    width: 62px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-item-img {
+    max-height: 50px;
+}
+.cart-item-description {
+    width: 162px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 5px;
+}
+.cart-item-link {
+    color: #00b9fe;
+    font:13px 'elektra_light_proregular';
+}
+.cart-item-link:hover {
+    color: #00b9fe;
+}
+.cart-item-link:visited {
+    color: #00b9fe;
+}
+
+/*=======================================================> navigation menu block*/
+.containerNav {
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 0 rgba(0,0,0,.15);
+    margin-bottom: 20px;
+}
+.nav {
+    max-width: 1000px; width: 100%;
+    margin: 0 auto;
+}
+.nav-list-item {
+    display: inline-block;
+    height: 40px;
+    position: relative;
+    background: url(/img/decor/nav-decor.png) right 0 no-repeat;
+    padding-right: 22px;
+    list-style: none;
+}
+.nav-list-link{
+    display: block;
+    text-decoration: none;
+    font-family: 'elektra_light_proregular';
+    font-size: 15px;
+    color: #5c7b98;
+    line-height: 40px;
+}
+.nav-list-item:hover:not(.nav-list-item_active) .nav-list-link {
+    background: url(/img/bg/nav-hover.png) no-repeat;
+    position: relative;
+    left: -22px;
+    padding-left: 30px;
+    margin-right: -22px;
+    background-position: 9px 0; 
+}
+.nav-list-item:hover:not(.nav-list-item_active) {
+    background:url(/img/bg/nav-hover.png) right no-repeat;
+    left: -8px;
+}
+.nav-list-item:hover + li {
+    margin-left: -8px;
+}
+.nav-list-item_last {
+    background-image: none;
+}
+.nav-list-link_active {
+    background: url(/img/bg/nav-focus.png) no-repeat;
+    position: relative;
+    left: -22px;
+    padding-left: 27px;
+    margin-right: -27px;
+    background-position: 9px 0; 
+    color: white;
+}
+.nav-list-item_active {
+    background:url(/img/bg/nav-focus.png) right no-repeat;
+    left: -10px;
+    margin-right: -5px;
+}
+.nav-list-item_active + li {
+    margin-left: -2px !important;
+}
+
+/*=======================================================> main content block*/
+.containerMainContent {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.breadcrumbsList {
+    list-style: none;
+    margin-bottom: 20px;
+}
+.breadcrumbsList-item {
+    display: inline-block;
+}
+.breadcrumbsList-item:before {
+    content: ">";
+    font-family: 'elektra_light_proregular';
+    font-size: 10px;
+    color: #5c7b98;
+    padding-right: 5px;
+}
+.breadcrumbsList-item:first-child:before {
+    display: none;
+}
+.breadcrumbsList-link {
+    font-size: 14px;
+    font-family: 'elektra_light_proregular';
+    color: rgb(0, 185, 254);
+    text-decoration: underline;
+}
+.breadcrumbsList-link:hover {
+    color: #613993;
+}
+.breadcrumbs-link_active {
+    color: #6b86a0;
+    text-decoration: none;
+}
+
+/*=======================================================> product description image block*/
+.productDescription {
+    margin-bottom: 60px;
+}
+.imageBlock-mainImage {
+   margin-bottom: 8px !important;
+}
+.mainImageWrapper {
+    display: flex !important;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+}
+.mainImageWrapper:focus,.leftButton:focus,.rightButton:focus {
+    outline: none;
+}
+.mainImage{
+    max-width: 100%;
+    max-height: 250px;
+}
+.galleryWrapper {
+    position: relative;
+}
+.gallery {
+    width: 243px;
+    position: absolute;
+    left: 26px;
+}
+.gallery .slick-list .slick-track {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.gallery-imageWrapper {
+    width: 75px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-imageWrapper:focus {
+    outline: none;
+}
+.gallery .slick-list {
+    width: 243px !important;
+    padding: 0 !important;
+    margin: 0 auto;
+}
+.gallery-image {
+    max-width: 100% !important;
+    max-height: 75px;
+}
+.imageBlock {
+    width: 300px;
+    height: 335px;
+    float: left;
+}
+.imageBlock-gallery {
+    width: 100%;
+    position: relative;
+}
+.imageBlock-mainImageWrapper {
+    display: table-cell;
+    width: 100%;
+    height: 260px;
+    text-align: center;
+    vertical-align: middle;
+}
+.gallery-imageWrapper {
+    height: 75px;
+    display: table-cell;
+    width: 75px;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+}
+.gallery-imagesList {
+    list-style: none;
+    margin: 0 auto;
+    width: 243px;
+}
+.leftButton {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    font-family: 'elektra_light_probold';
+    font-size: 16px;
+    line-height: 35px;
+    width: 22px;
+    display: block !important;
+}
+.leftButton-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    background-color: #d0e4f3;
+    width: 15px;
+    height: 34px;
+    text-align: left;
+    margin-left: 7px;
+    
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+.leftButton-link:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 17px 7px 17px 0;
+    border-color: transparent #d0e4f3 transparent transparent;
+    font-size: 0px;
+    line-height: 0px;
+    content: "";
+    position: absolute;
+    right: 15px;
+}
+.leftButton-link:hover {
+    background-color: #00b9fe;
+    cursor: pointer;
+}
+.leftButton-link:hover:before {
+    border-color: transparent #00b9fe transparent transparent;
+}
+.rightButton {
+    width: 22px;
+    height: 34px;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    font-family: 'elektra_light_probold';
+    line-height: 35px;
+    font-size: 16px;
+    display: block !important;
+}
+.rightButton-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    width: 15px;
+    height: 34px;
+    background-color: #d0e4f3;
+    text-align: right;
+
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+.rightButton-link:after {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 17px 0 17px 7px;
+    border-color: transparent transparent transparent #d0e4f3;
+    content: "";
+    font-size: 0px;
+    line-height: 0px;
+    position: absolute;
+    left: 15px;
+}
+.rightButton-link:hover {
+    background-color: #00b9fe;
+    cursor: pointer;
+}
+.rightButton-link:hover:after {
+    border-color: transparent transparent transparent #00b9fe;
+}
+
+/*=======================================================> product description data table block*/
+.description {
+    float: right;
+    margin-right: 150px;
+}
+.description-title {
+    font-size: 25px;
+    font-family: 'elektra_light_probold';
+    color: rgb(0, 185, 254);
+    font-weight: bold;
+    line-height: 0.8;
+    text-align: left;
+    margin-bottom: 32px;
+}
+.desription-table {
+    width: 444px;
+    font-size: 14px;
+
+}
+.description-table-cell {
+    color: #5c7b98;
+}
+.description-table-cell:first-child {
+    width: 256px;
+}
+.description-table-cell:last-child {
+    width: 188px;
+}
+.description-table-row {
+    height: 28px;
+}
+.description-table-row:nth-child(even) {
+    background-color: #eef2f4;
+}
+
+/*=======================================================> shop description block*/
+.aboutShopHeading {
+    font: 25px 'elektra_light_probold';
+    color: #5c7b98;
+    margin-bottom: 10px;
+}
+.aboutShopWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.aboutShop-text {
+    width: 300px;
+    font: 15px 'elektra_light_proregular';
+    color: #5c7b98;
+}
+
+/*=======================================================> footer block*/
+.containerFooter {
+    background: url(../img/bg/footer-bg-pattern.png);
+    min-width: 1000px;
+    height: 228px;
+    margin: 0 auto;
+}
+.footer {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+.footer-logo {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+.footer-logo-title {
+    position: absolute;
+    text-indent: -99999px;
+}
+.footerLists {
+    position: absolute;
+    top: 60px;
+    left: 260px;
+}
+.footerList {
+    display: inline-block;
+}
+.footerList:not(:first-child) {
+    margin-left: 75px;
+}
+.footer-list-item {
+    list-style: none;
+}
+.footer-list-item:first-child {
+    font: 15px 'elektra_light_proregular';
+    color: white;
+    line-height: 25px;
+    font-weight: bold;
+    color: white;
+}
+.footer-list-item-link {
+    font: 15px 'elektra_light_proregular';
+    color: white;
+    line-height: 25px;
+}
+.socialWrapper {
+    position: absolute;
+    top: 70px;
+    right: 0;
+}
+.softStores {
+    width: 185px;
+    margin-bottom: 28px;
+}
+.appStore,.googlePlay {
+    width: 90px;
+    height: 32px;
+    display: inline-block;
+}
+.appStore {
+    background-image: url('../img/sprite-icons.png');
+    background-position: -4px -93px;
+}
+.googlePlay {
+    background-image: url('../img/sprite-icons.png');
+    background-position: -4px -133px;
+}
+.socailList_large {
+    width: 145px;
+    display: flex;
+    justify-content: space-between;
+}
+.socialList-item_large {
+    list-style: none;
+    display: inline-block;
+}
+.social-icon_large {
+    display: block;
+    text-indent: -99999px;
+    width: 40px;
+    height: 40px;
+}
+.vk {
+    background-image: url('../img/sprite-icons.png');
+    background-position: -6px -175px;
+}
+.fb {
+    background-image: url('../img/sprite-icons.png');
+    background-position: -59px -175px;
+}
+.tw {
+    background-image: url('../img/sprite-icons.png');
+    background-position: -110px -175px;
+}
+
+/*=======================================================> to top button styles*/
+.upButton {
+    background-color: #00b9fe;
+    color: white;
+    text-decoration: none;
+    font: 22px 'elektra_light_probold';
+    line-height: 40px;
+    text-align: center;
+    width: 115px;
+    position: fixed;
+    bottom: 300px;
+    right: 25px;
+    cursor: pointer;
+    display: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+.upButton:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #00b9fe transparent;
+    position: absolute;
+    top: -8px;
+    left: 52px;
+}
+.upButton:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #ffffff transparent;
+    position: absolute;
+    top: 32px;
+    left: 52px;
+}
+.upButton_show {
+    display: block;
+}
+
+/*=======================================================> common fixes and hacks*/
+/* Clearfix */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both; 
+}
+.clearfix {
+  *zoom: 1;
+}
+/*pin footer to bottom*/
+.container-clear {
+  height: 228px;
+  content: "";
+}
+.m-display_none {
+    display: none;
+}

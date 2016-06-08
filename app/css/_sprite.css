@@ -1,0 +1,40 @@
+.icon {
+  background-image: url('../sprite.png');
+}
+
+.icon-basket-icon {
+  background-position: -4px -4px;
+  width: 20px;
+  height: 17px;
+}
+
+.icon-location-icon {
+  background-position: -4px -29px;
+  width: 16px;
+  height: 22px;
+}
+
+.icon-socials-small {
+  background-position: -4px -59px;
+  width: 88px;
+  height: 26px;
+}
+
+.icon-icon-applestore {
+  background-position: -4px -93px;
+  width: 90px;
+  height: 32px;
+}
+
+.icon-icon-googlePlay {
+  background-position: -4px -133px;
+  width: 90px;
+  height: 32px;
+}
+
+.icon-socials-big {
+  background-position: -4px -173px;
+  width: 148px;
+  height: 44px;
+}
+
